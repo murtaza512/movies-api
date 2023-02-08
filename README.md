@@ -1,5 +1,7 @@
 # Movies Collection Backend
 
+Movie Collection Endpoint is a Github repository that provides a RESTful API for managing a database of movies. It allows users to perform operations on movie records.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
