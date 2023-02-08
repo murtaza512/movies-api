@@ -1,24 +1,76 @@
-# README
+# Movies Collection Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
 
 * Ruby version
+ 3.1.0
 
-* System dependencies
+ ```
+ rvm install 3.1.0
+ ```
+* Database
+postgresql
 
-* Configuration
+```
+brew install postgres
+```
+
+
+* Clone the repository
+
+
+```
+mkdir movies_endpoint
+
+cd movies_endpoint
+
+git clone https://github.com/murtaza512/movies-api.git
+
+cd movies_endpoint
+```
+
+* Install Gems
+```
+bundle install
+```
 
 * Database creation
 
-* Database initialization
+```
+  rails db:create
+  rails db:migrate
+```
+
+* Populate Database with csv data
+```
+  rails db:seed
+```
+
+* Run app locally on 3000 port
+
+```
+rails server
+```
+
+it will run the app on this url. Visit it and you can play with it
+http://localhost:3000/
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rspec
+```
 
-* Deployment instructions
+### Gems and plugins
+- Used rspec, factorybot along with shoulda matchers gem for test coverage
 
-* ...
+### Workflow and functionality
+
+- User can see the all the movies on root page
+- User can see details of specific movie by clicking on it
+- User can switch to different pages using Page numbers buttons
